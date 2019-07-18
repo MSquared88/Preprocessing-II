@@ -37,6 +37,9 @@
 
       img {
         border-radius: 10px;
+        @media @phone{
+          width: 100%;
+        }
       }
     }
   }
@@ -44,6 +47,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @phone{
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -59,9 +65,16 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @phone{
+      margin: 0 0;
+      width: 100%;
+    }
     img {
       border-radius: 10px;
+      @media @phone{
+        width: 100%;
+        margin-bottom: 4%;
+      }
     }
   }
 
@@ -70,12 +83,23 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
+    @media @phone{
+        flex-direction: column;
+        width: 100%;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @phone{
+        width: 100%;
+        padding: 0% 10%; 
+      }
+
       .btn{
         .sign-up(#008080,white, 2rem);
+        @media @phone{
+        .sign-up(#17a2b8,white, 2rem);
+        }
       }
     }
   }
