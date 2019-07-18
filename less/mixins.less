@@ -1,9 +1,12 @@
 // Mixins in here
-.sign-up(@bg-color:#008080, @font, @font-color:white){
+.sign-up(@bg-color, @font-color, @font-size){
+    text-align: center;
+    padding: 5% 0%;
+    margin: 0;
     width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
+    border: 8px solid white;
+    border-radius: 20px;
     background: @bg-color;
-    font-family: @font;
-    color:@font-color;
+    font-size: @font-size;
+    color: @font-color;
 }
